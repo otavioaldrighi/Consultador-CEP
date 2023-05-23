@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link to CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Link to JavaScript -->
+	<script src="script.js" defer></script>
+	<!-- Link to Favicon -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<title>Consultador de CEP</title>	
+</head>
+
+	<body>
+
+		<div class="container">
+			<h1 class="container-title">Consultador de CEP</h1>
+				<div class="form">
+					<label for="cep" class="cep">CEP:</label>
+					<input type="text" onkeypress="onlyNumbers(event)" id="cep" placeholder="Digite o CEP..." maxlength="8">
+					<button id="search" onclick="searchAddress()">Buscar</button>
+				</div>
+			<div id="address"></div>
+		</div>
+	
+	</body>
+</html>
